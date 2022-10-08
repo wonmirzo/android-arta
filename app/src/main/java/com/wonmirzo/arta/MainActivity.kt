@@ -83,91 +83,97 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setFragment(index: Int) {
-        if (index == 0) {
-            binding.apply {
-                lnHome!!.setBackgroundColor(Color.WHITE)
-                lnHome.setBackgroundResource(R.drawable.background_rounded_corners_left)
-                tvHome!!.setTextColor(Color.BLACK)
+        when (index) {
+            0 -> {
+                binding.apply {
+                    lnHome!!.setBackgroundColor(Color.WHITE)
+                    lnHome.setBackgroundResource(R.drawable.background_rounded_corners)
+                    tvHome!!.setTextColor(Color.BLACK)
 
-                llInspection!!.setBackgroundColor(Color.TRANSPARENT)
-                tvInspection!!.setTextColor(Color.RED)
+                    llInspection!!.setBackgroundColor(Color.TRANSPARENT)
+                    tvInspection!!.setTextColor(Color.RED)
 
-                llDiagnosis!!.setBackgroundColor(Color.TRANSPARENT)
-                tvDiagnosis!!.setTextColor(Color.RED)
+                    llDiagnosis!!.setBackgroundColor(Color.TRANSPARENT)
+                    tvDiagnosis!!.setTextColor(Color.RED)
 
-                llDrugs!!.setBackgroundColor(Color.TRANSPARENT)
-                tvDrugs!!.setTextColor(Color.RED)
+                    llDrugs!!.setBackgroundColor(Color.TRANSPARENT)
+                    tvDrugs!!.setTextColor(Color.RED)
 
-                lyClock!!.setBackgroundColor(Color.TRANSPARENT)
-                tvClock!!.setTextColor(Color.RED)
+                    lyClock!!.setBackgroundColor(Color.TRANSPARENT)
+                    tvClock!!.setTextColor(Color.RED)
+                }
             }
-        } else if (index == 1) {
-            binding.apply {
-                lnHome!!.setBackgroundColor(Color.TRANSPARENT)
-                tvHome!!.setTextColor(Color.RED)
+            1 -> {
+                binding.apply {
+                    lnHome!!.setBackgroundColor(Color.TRANSPARENT)
+                    tvHome!!.setTextColor(Color.RED)
 
-                llInspection!!.setBackgroundColor(Color.TRANSPARENT)
-                tvInspection!!.setTextColor(Color.RED)
+                    llInspection!!.setBackgroundColor(Color.TRANSPARENT)
+                    tvInspection!!.setTextColor(Color.RED)
 
-                llDiagnosis!!.setBackgroundColor(Color.TRANSPARENT)
-                tvDiagnosis!!.setTextColor(Color.RED)
+                    llDiagnosis!!.setBackgroundColor(Color.TRANSPARENT)
+                    tvDiagnosis!!.setTextColor(Color.RED)
 
-                llDrugs!!.setBackgroundColor(Color.TRANSPARENT)
-                tvDrugs!!.setTextColor(Color.RED)
+                    llDrugs!!.setBackgroundColor(Color.TRANSPARENT)
+                    tvDrugs!!.setTextColor(Color.RED)
 
-                lyClock!!.setBackgroundColor(Color.WHITE)
-                tvClock!!.setTextColor(Color.BLACK)
+                    lyClock!!.setBackgroundColor(Color.WHITE)
+                    tvClock!!.setTextColor(Color.BLACK)
+                }
             }
-        } else if (index == 2) {
-            binding.apply {
-                llInspection!!.setBackgroundColor(Color.WHITE)
-                tvInspection!!.setTextColor(Color.BLACK)
+            2 -> {
+                binding.apply {
+                    llInspection!!.setBackgroundColor(Color.WHITE)
+                    tvInspection!!.setTextColor(Color.BLACK)
 
-                lnHome!!.setBackgroundColor(Color.TRANSPARENT)
-                tvHome!!.setTextColor(Color.RED)
+                    lnHome!!.setBackgroundColor(Color.TRANSPARENT)
+                    tvHome!!.setTextColor(Color.RED)
 
-                llDiagnosis!!.setBackgroundColor(Color.TRANSPARENT)
-                tvDiagnosis!!.setTextColor(Color.RED)
+                    llDiagnosis!!.setBackgroundColor(Color.TRANSPARENT)
+                    tvDiagnosis!!.setTextColor(Color.RED)
 
-                llDrugs!!.setBackgroundColor(Color.TRANSPARENT)
-                tvDrugs!!.setTextColor(Color.RED)
+                    llDrugs!!.setBackgroundColor(Color.TRANSPARENT)
+                    tvDrugs!!.setTextColor(Color.RED)
 
-                lyClock!!.setBackgroundColor(Color.TRANSPARENT)
-                tvClock!!.setTextColor(Color.RED)
+                    lyClock!!.setBackgroundColor(Color.TRANSPARENT)
+                    tvClock!!.setTextColor(Color.RED)
+                }
             }
-        } else if (index == 3) {
-            binding.apply {
-                llDiagnosis!!.setBackgroundColor(Color.WHITE)
-                tvDiagnosis!!.setTextColor(Color.BLACK)
+            3 -> {
+                binding.apply {
+                    llDiagnosis!!.setBackgroundColor(Color.WHITE)
+                    tvDiagnosis!!.setTextColor(Color.BLACK)
 
-                lnHome!!.setBackgroundColor(Color.TRANSPARENT)
-                tvHome!!.setTextColor(Color.RED)
+                    lnHome!!.setBackgroundColor(Color.TRANSPARENT)
+                    tvHome!!.setTextColor(Color.RED)
 
-                llInspection!!.setBackgroundColor(Color.TRANSPARENT)
-                tvInspection!!.setTextColor(Color.RED)
+                    llInspection!!.setBackgroundColor(Color.TRANSPARENT)
+                    tvInspection!!.setTextColor(Color.RED)
 
-                llDrugs!!.setBackgroundColor(Color.TRANSPARENT)
-                tvDrugs!!.setTextColor(Color.RED)
+                    llDrugs!!.setBackgroundColor(Color.TRANSPARENT)
+                    tvDrugs!!.setTextColor(Color.RED)
 
-                lyClock!!.setBackgroundColor(Color.TRANSPARENT)
-                tvClock!!.setTextColor(Color.RED)
+                    lyClock!!.setBackgroundColor(Color.TRANSPARENT)
+                    tvClock!!.setTextColor(Color.RED)
+                }
             }
-        } else {
-            binding.apply {
-                llDrugs!!.setBackgroundColor(Color.WHITE)
-                tvDrugs!!.setTextColor(Color.BLACK)
+            else -> {
+                binding.apply {
+                    llDrugs!!.setBackgroundColor(Color.WHITE)
+                    tvDrugs!!.setTextColor(Color.BLACK)
 
-                lnHome!!.setBackgroundColor(Color.TRANSPARENT)
-                tvHome!!.setTextColor(Color.RED)
+                    lnHome!!.setBackgroundColor(Color.TRANSPARENT)
+                    tvHome!!.setTextColor(Color.RED)
 
-                llInspection!!.setBackgroundColor(Color.TRANSPARENT)
-                tvInspection!!.setTextColor(Color.RED)
+                    llInspection!!.setBackgroundColor(Color.TRANSPARENT)
+                    tvInspection!!.setTextColor(Color.RED)
 
-                llDiagnosis!!.setBackgroundColor(Color.TRANSPARENT)
-                tvDiagnosis!!.setTextColor(Color.RED)
+                    llDiagnosis!!.setBackgroundColor(Color.TRANSPARENT)
+                    tvDiagnosis!!.setTextColor(Color.RED)
 
-                lyClock!!.setBackgroundColor(Color.TRANSPARENT)
-                tvClock!!.setTextColor(Color.RED)
+                    lyClock!!.setBackgroundColor(Color.TRANSPARENT)
+                    tvClock!!.setTextColor(Color.RED)
+                }
             }
         }
 
