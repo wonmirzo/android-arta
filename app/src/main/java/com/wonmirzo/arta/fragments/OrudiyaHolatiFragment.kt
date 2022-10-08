@@ -4,18 +4,20 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.wonmirzo.arta.databinding.FragmentMedicinePageBinding
+import com.wonmirzo.arta.databinding.FragmentOrudiyaHolatiBinding
 
-/** The name of the medication in the PageMedicineFragment and additional advice for the patient **/
-
-class PageMedicineFragment : BaseFragment() {
-    private var _binding: FragmentMedicinePageBinding? = null
+/**
+ * TimeFragment to accurately store information and time
+ * **/
+class OrudiyaHolatiFragment : BaseFragment() {
+    private var _binding: FragmentOrudiyaHolatiBinding? = null
     private val binding get() = _binding!!
-    private var fragment: PageMedicineFragment? = null
 
-    fun newInstance(): PageMedicineFragment? {
+    private var fragment: OrudiyaHolatiFragment? = null
+
+    fun newInstance(): OrudiyaHolatiFragment? {
         if (fragment == null) {
-            fragment = PageMedicineFragment()
+            fragment = OrudiyaHolatiFragment()
         }
         return fragment
     }
@@ -25,8 +27,9 @@ class PageMedicineFragment : BaseFragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
-        _binding = FragmentMedicinePageBinding.inflate(inflater, container, false)
+        _binding = FragmentOrudiyaHolatiBinding.inflate(inflater, container, false)
         val view = binding.root
+
         initViews()
         return view
     }

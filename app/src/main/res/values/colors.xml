@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     
     <color name="item_unselected">#EAD387</color>
+    <color name="bg_item">#B5F182</color>
 </resources>

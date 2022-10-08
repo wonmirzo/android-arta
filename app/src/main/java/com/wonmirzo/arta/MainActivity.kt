@@ -1,6 +1,5 @@
 package com.wonmirzo.arta
 
-import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.viewpager.widget.ViewPager
@@ -15,11 +14,11 @@ class MainActivity : AppCompatActivity() {
     var index = 0
 
     // fragments
-    private lateinit var mapsInfoFragment: MapsInfoFragment
-    private lateinit var timeFragment: TimeFragment
-    private lateinit var pageStatementFragment: PageStatementFragment
-    private lateinit var pageStatementFragmentContinue: PageStatementFragmentContinue
-    private lateinit var pageMedicineFragment: PageMedicineFragment
+    private lateinit var jangovarTartibFragment: JangovarTartibFragment
+    private lateinit var orudiyaHolatiFragment: OrudiyaHolatiFragment
+    private lateinit var otOchishFragment: OtOchishFragment
+    private lateinit var xabarlarFragment: XabarlarFragment
+    private lateinit var qoshimchaFragment: QoshimchaFragment
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -86,93 +85,25 @@ class MainActivity : AppCompatActivity() {
         when (index) {
             0 -> {
                 binding.apply {
-                    lnHome!!.setBackgroundColor(Color.WHITE)
-                    lnHome.setBackgroundResource(R.drawable.background_rounded_corners)
-                    tvHome!!.setTextColor(Color.BLACK)
 
-                    llInspection!!.setBackgroundColor(Color.TRANSPARENT)
-                    tvInspection!!.setTextColor(Color.RED)
-
-                    llDiagnosis!!.setBackgroundColor(Color.TRANSPARENT)
-                    tvDiagnosis!!.setTextColor(Color.RED)
-
-                    llDrugs!!.setBackgroundColor(Color.TRANSPARENT)
-                    tvDrugs!!.setTextColor(Color.RED)
-
-                    lyClock!!.setBackgroundColor(Color.TRANSPARENT)
-                    tvClock!!.setTextColor(Color.RED)
                 }
             }
             1 -> {
                 binding.apply {
-                    lnHome!!.setBackgroundColor(Color.TRANSPARENT)
-                    tvHome!!.setTextColor(Color.RED)
 
-                    llInspection!!.setBackgroundColor(Color.TRANSPARENT)
-                    tvInspection!!.setTextColor(Color.RED)
-
-                    llDiagnosis!!.setBackgroundColor(Color.TRANSPARENT)
-                    tvDiagnosis!!.setTextColor(Color.RED)
-
-                    llDrugs!!.setBackgroundColor(Color.TRANSPARENT)
-                    tvDrugs!!.setTextColor(Color.RED)
-
-                    lyClock!!.setBackgroundColor(Color.WHITE)
-                    tvClock!!.setTextColor(Color.BLACK)
                 }
             }
             2 -> {
                 binding.apply {
-                    llInspection!!.setBackgroundColor(Color.WHITE)
-                    tvInspection!!.setTextColor(Color.BLACK)
 
-                    lnHome!!.setBackgroundColor(Color.TRANSPARENT)
-                    tvHome!!.setTextColor(Color.RED)
-
-                    llDiagnosis!!.setBackgroundColor(Color.TRANSPARENT)
-                    tvDiagnosis!!.setTextColor(Color.RED)
-
-                    llDrugs!!.setBackgroundColor(Color.TRANSPARENT)
-                    tvDrugs!!.setTextColor(Color.RED)
-
-                    lyClock!!.setBackgroundColor(Color.TRANSPARENT)
-                    tvClock!!.setTextColor(Color.RED)
                 }
             }
             3 -> {
-                binding.apply {
-                    llDiagnosis!!.setBackgroundColor(Color.WHITE)
-                    tvDiagnosis!!.setTextColor(Color.BLACK)
 
-                    lnHome!!.setBackgroundColor(Color.TRANSPARENT)
-                    tvHome!!.setTextColor(Color.RED)
-
-                    llInspection!!.setBackgroundColor(Color.TRANSPARENT)
-                    tvInspection!!.setTextColor(Color.RED)
-
-                    llDrugs!!.setBackgroundColor(Color.TRANSPARENT)
-                    tvDrugs!!.setTextColor(Color.RED)
-
-                    lyClock!!.setBackgroundColor(Color.TRANSPARENT)
-                    tvClock!!.setTextColor(Color.RED)
-                }
             }
             else -> {
                 binding.apply {
-                    llDrugs!!.setBackgroundColor(Color.WHITE)
-                    tvDrugs!!.setTextColor(Color.BLACK)
 
-                    lnHome!!.setBackgroundColor(Color.TRANSPARENT)
-                    tvHome!!.setTextColor(Color.RED)
-
-                    llInspection!!.setBackgroundColor(Color.TRANSPARENT)
-                    tvInspection!!.setTextColor(Color.RED)
-
-                    llDiagnosis!!.setBackgroundColor(Color.TRANSPARENT)
-                    tvDiagnosis!!.setTextColor(Color.RED)
-
-                    lyClock!!.setBackgroundColor(Color.TRANSPARENT)
-                    tvClock!!.setTextColor(Color.RED)
                 }
             }
         }
@@ -181,20 +112,20 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupViewPager(viewPager: ViewPager?) {
         val adapter = ViewPagerAdapter(supportFragmentManager)
-        adapter.addFragment(MapsInfoFragment())
-        adapter.addFragment(TimeFragment())
-        adapter.addFragment(PageStatementFragment())
-        adapter.addFragment(PageStatementFragmentContinue())
-        adapter.addFragment(PageMedicineFragment())
+        adapter.addFragment(JangovarTartibFragment())
+        adapter.addFragment(OrudiyaHolatiFragment())
+        adapter.addFragment(OtOchishFragment())
+        adapter.addFragment(XabarlarFragment())
+        adapter.addFragment(QoshimchaFragment())
         viewPager?.offscreenPageLimit = 3
         viewPager?.adapter = adapter
     }
 
     private fun initFragments() {
-        mapsInfoFragment = MapsInfoFragment().newInstance()!!
-        timeFragment = TimeFragment().newInstance()!!
-        pageStatementFragment = PageStatementFragment().newInstance()!!
-        pageStatementFragmentContinue = PageStatementFragmentContinue().newInstance()!!
-        pageMedicineFragment = PageMedicineFragment().newInstance()!!
+        jangovarTartibFragment = JangovarTartibFragment().newInstance()!!
+        orudiyaHolatiFragment = OrudiyaHolatiFragment().newInstance()!!
+        otOchishFragment = OtOchishFragment().newInstance()!!
+        xabarlarFragment = XabarlarFragment().newInstance()!!
+        qoshimchaFragment = QoshimchaFragment().newInstance()!!
     }
 }

@@ -4,20 +4,21 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.wonmirzo.arta.databinding.FragmentTimeBinding
+import com.wonmirzo.arta.databinding.FragmentXabarlarBinding
 
 /**
- * TimeFragment to accurately store information and time
+ * PageStatementFragmentContinue mainly to save data from checkboxes to the database
  * **/
-class TimeFragment : BaseFragment() {
-    private var _binding: FragmentTimeBinding? = null
+
+class XabarlarFragment : BaseFragment() {
+    private var _binding: FragmentXabarlarBinding? = null
     private val binding get() = _binding!!
 
-    private var fragment: TimeFragment? = null
+    private var fragment: XabarlarFragment? = null
 
-    fun newInstance(): TimeFragment? {
+    fun newInstance(): XabarlarFragment? {
         if (fragment == null) {
-            fragment = TimeFragment()
+            fragment = XabarlarFragment()
         }
         return fragment
     }
@@ -27,14 +28,15 @@ class TimeFragment : BaseFragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
-        _binding = FragmentTimeBinding.inflate(inflater, container, false)
+        _binding = FragmentXabarlarBinding.inflate(inflater, container, false)
         val view = binding.root
-
         initViews()
         return view
     }
 
     private fun initViews() {
+        binding.apply {
 
+        }
     }
 }

@@ -4,18 +4,18 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.wonmirzo.arta.databinding.FragmentStatementPageBinding
+import com.wonmirzo.arta.databinding.FragmentOtOchishBinding
 
 /**
  * PageStatementFragment mainly to save data from checkboxes to the database
  * **/
-class PageStatementFragment : BaseFragment() {
-    private var _binding: FragmentStatementPageBinding? = null
+class OtOchishFragment : BaseFragment() {
+    private var _binding: FragmentOtOchishBinding? = null
     private val binding get() = _binding!!
-    private var fragment: PageStatementFragment? = null
+    private var fragment: OtOchishFragment? = null
 
-    fun newInstance(): PageStatementFragment? {
-        return PageStatementFragment()
+    fun newInstance(): OtOchishFragment? {
+        return OtOchishFragment()
     }
 
     override fun onCreateView(
@@ -23,7 +23,7 @@ class PageStatementFragment : BaseFragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
-        _binding = FragmentStatementPageBinding.inflate(inflater, container, false)
+        _binding = FragmentOtOchishBinding.inflate(inflater, container, false)
         val view = binding.root
         initViews()
         return view

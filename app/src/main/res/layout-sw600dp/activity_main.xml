@@ -41,20 +41,21 @@
                     android:id="@+id/ln_home"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginLeft="10dp"
                     android:layout_weight="1"
-                    android:background="@drawable/background_rounded_corners"
+                    android:background="@drawable/background_rounded_corners_left"
                     android:gravity="center"
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/tvJangovar"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="10dp"
-                        android:text="Jangovar tartib"
+                        android:text="@string/str_jangovar"
                         android:textAlignment="center"
                         android:textColor="@color/black"
-                        android:textSize="24sp" />
+                        android:textSize="22sp" />
 
                 </LinearLayout>
 
@@ -64,16 +65,19 @@
                     android:layout_height="0dp"
                     android:layout_marginLeft="10dp"
                     android:layout_weight="1"
+                    android:background="@drawable/background_rounded_corners_left"
                     android:gravity="center_horizontal|center_vertical"
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/tv_clock"
+                        android:id="@+id/tvOrudiya"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Vaqtlar"
-                        android:textSize="16sp"
-                        android:textStyle="normal" />
+                        android:padding="10dp"
+                        android:text="@string/str_orudiya"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="22sp" />
 
                 </LinearLayout>
 
@@ -88,13 +92,14 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/tv_inspection"
+                        android:id="@+id/tvOtOchish"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="3dp"
-                        android:text="Tekshiruv"
-                        android:textSize="16sp"
-                        android:textStyle="normal" />
+                        android:padding="10dp"
+                        android:text="@string/str_ot_ochish"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="22sp" />
 
                 </LinearLayout>
 
@@ -109,13 +114,14 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/tv_diagnosis"
+                        android:id="@+id/tvXabarlar"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="3dp"
-                        android:text="Tashxis"
-                        android:textSize="16sp"
-                        android:textStyle="normal" />
+                        android:padding="10dp"
+                        android:text="@string/str_xabarlar"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="22sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -129,12 +135,14 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/tv_drugs"
+                        android:id="@+id/tvQoshimcha"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Dorilar"
-                        android:textSize="16sp"
-                        android:textStyle="normal" />
+                        android:padding="10dp"
+                        android:text="@string/str_qoshimcha"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="24sp" />
                 </LinearLayout>
 
             </LinearLayout>

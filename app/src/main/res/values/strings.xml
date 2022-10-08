@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">arta</string>
+    <string name="str_jangovar">ЖАНГОВАР ТАРТИБ</string>
+    <string name="str_orudiya">ОРУДИЯ XОЛАТИ, ТАЪМИНЛАНГАНЛИГИ</string>
+    <string name="str_ot_ochish">ЎТ ОЧИШ ВАЗИФАСИ</string>
+    <string name="str_xabarlar">ХАБАРЛАР</string>
+    <string name="str_qoshimcha">KЎШИМЧА</string>
 </resources>
