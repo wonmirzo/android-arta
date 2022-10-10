@@ -9,13 +9,61 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
+        android:background="@color/bg_main"
         app:elevation="0dp">
 
         <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             app:titleTextColor="#000000">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="end"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_main_title"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="end|center_vertical">
+
+                    <DigitalClock
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:textColor="@color/red"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/btnYakunlash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_btn"
+                        android:text="@string/str_yakunlash"
+                        android:textColor="@color/black"
+                        app:backgroundTint="@null" />
+
+                </LinearLayout>
+
+            </LinearLayout>
 
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
@@ -38,12 +86,11 @@
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:id="@+id/ln_home"
+                    android:id="@+id/llJangovar"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_marginLeft="10dp"
                     android:layout_weight="1"
-                    android:background="@drawable/background_rounded_corners_left"
+                    android:background="@drawable/background_rounded_corners_left_selected"
                     android:gravity="center"
                     android:orientation="vertical">
 
@@ -60,10 +107,9 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/ly_clock"
+                    android:id="@+id/llOrudiya"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_marginLeft="10dp"
                     android:layout_weight="1"
                     android:background="@drawable/background_rounded_corners_left"
                     android:gravity="center_horizontal|center_vertical"
@@ -82,10 +128,9 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/ll_inspection"
+                    android:id="@+id/llOtOchish"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_marginLeft="10dp"
                     android:layout_weight="1"
                     android:background="@drawable/background_rounded_corners_left"
                     android:gravity="center_horizontal|center_vertical"
@@ -104,10 +149,9 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/ll_diagnosis"
+                    android:id="@+id/llXabarlar"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_marginLeft="10dp"
                     android:layout_weight="1"
                     android:background="@drawable/background_rounded_corners_left"
                     android:gravity="center_horizontal|center_vertical"
@@ -125,10 +169,9 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/ll_drugs"
+                    android:id="@+id/llQoshimcha"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_marginLeft="10dp"
                     android:layout_weight="1.1"
                     android:background="@drawable/background_rounded_corners_left"
                     android:gravity="center_horizontal|center_vertical"
@@ -152,7 +195,6 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_above="@+id/bottomNavigationView"
-                android:layout_marginRight="15dp"
                 android:layout_weight="1" />
 
         </LinearLayout>

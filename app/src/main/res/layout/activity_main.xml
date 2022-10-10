@@ -38,7 +38,7 @@
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:id="@+id/ln_home"
+                    android:id="@+id/llJangovar"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_marginLeft="15dp"
@@ -59,7 +59,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/ly_clock"
+                    android:id="@+id/ll_orudiya"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_marginLeft="10dp"
@@ -78,7 +78,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/ll_inspection"
+                    android:id="@+id/ll_ot_ochish"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_marginLeft="10dp"

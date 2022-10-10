@@ -9,5 +9,10 @@
     <color name="white">#FFFFFFFF</color>
     
     <color name="item_unselected">#EAD387</color>
+    <color name="item_selected">#148581</color>
     <color name="bg_item">#B5F182</color>
+    <color name="bg_main">#06713D</color>
+    <color name="red">#682323</color>
+    <color name="bg_btn">#5DC1AA</color>
+    <color name="ripple_color">#D5CECE</color>
 </resources>

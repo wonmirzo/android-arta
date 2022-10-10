@@ -37,27 +37,27 @@ class MainActivity : AppCompatActivity() {
 
     private fun manageFragments() {
         binding.apply {
-            lnHome?.setOnClickListener {
+            llJangovar?.setOnClickListener {
                 index = 0
                 viewPager?.currentItem = index
             }
 
-            lyClock?.setOnClickListener {
+            llOrudiya?.setOnClickListener {
                 index = 1
                 viewPager?.currentItem = index
             }
 
-            llInspection?.setOnClickListener {
+            llOtOchish?.setOnClickListener {
                 index = 2
                 viewPager?.currentItem = index
             }
 
-            llDiagnosis?.setOnClickListener {
+            llXabarlar?.setOnClickListener {
                 index = 3
                 viewPager?.currentItem = index
             }
 
-            llDrugs?.setOnClickListener {
+            llQoshimcha?.setOnClickListener {
                 index = 4
                 viewPager?.currentItem = index
             }
@@ -85,26 +85,51 @@ class MainActivity : AppCompatActivity() {
         when (index) {
             0 -> {
                 binding.apply {
-
+                    llJangovar.setBackgroundResource(R.drawable.background_rounded_corners_left_selected)
+                    llOrudiya?.setBackgroundResource(R.drawable.background_rounded_corners_left)
+                    llOtOchish?.setBackgroundResource(R.drawable.background_rounded_corners_left)
+                    llQoshimcha?.setBackgroundResource(R.drawable.background_rounded_corners_left)
+                    llXabarlar?.setBackgroundResource(R.drawable.background_rounded_corners_left)
                 }
             }
             1 -> {
                 binding.apply {
-
+                    llJangovar.setBackgroundResource(R.drawable.background_rounded_corners_left)
+                    llOrudiya?.setBackgroundResource(R.drawable.background_rounded_corners_left_selected)
+                    llOtOchish?.setBackgroundResource(R.drawable.background_rounded_corners_left)
+                    llQoshimcha?.setBackgroundResource(R.drawable.background_rounded_corners_left)
+                    llXabarlar?.setBackgroundResource(R.drawable.background_rounded_corners_left)
                 }
             }
             2 -> {
                 binding.apply {
-
+                    llJangovar.setBackgroundResource(R.drawable.background_rounded_corners_left)
+                    llOrudiya?.setBackgroundResource(R.drawable.background_rounded_corners_left)
+                    llOtOchish?.setBackgroundResource(R.drawable.background_rounded_corners_left_selected)
+                    llQoshimcha?.setBackgroundResource(R.drawable.background_rounded_corners_left)
+                    llXabarlar?.setBackgroundResource(R.drawable.background_rounded_corners_left)
                 }
             }
             3 -> {
-
+                binding.apply {
+                    llJangovar.setBackgroundResource(R.drawable.background_rounded_corners_left)
+                    llOrudiya?.setBackgroundResource(R.drawable.background_rounded_corners_left)
+                    llOtOchish?.setBackgroundResource(R.drawable.background_rounded_corners_left)
+                    llXabarlar?.setBackgroundResource(R.drawable.background_rounded_corners_left_selected)
+                    llQoshimcha?.setBackgroundResource(R.drawable.background_rounded_corners_left)
+                }
+            }
+            4 -> {
+                binding.apply {
+                    llJangovar.setBackgroundResource(R.drawable.background_rounded_corners_left)
+                    llOrudiya?.setBackgroundResource(R.drawable.background_rounded_corners_left)
+                    llOtOchish?.setBackgroundResource(R.drawable.background_rounded_corners_left)
+                    llXabarlar?.setBackgroundResource(R.drawable.background_rounded_corners_left)
+                    llQoshimcha?.setBackgroundResource(R.drawable.background_rounded_corners_left_selected)
+                }
             }
             else -> {
-                binding.apply {
 
-                }
             }
         }
 
