@@ -8,8 +8,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     
-    <color name="item_unselected">#EAD387</color>
+    <color name="item_unselected">#E8CE78</color>
+    <color name="bg_menu">#EDD3A5</color>
     <color name="item_selected">#148581</color>
+    <color name="item_selected_bg">#43CAC5</color>
     <color name="bg_item">#B5F182</color>
     <color name="bg_main">#06713D</color>
     <color name="red">#682323</color>
