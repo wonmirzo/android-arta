@@ -10,4 +10,20 @@
     <string name="str_koordinatalar">КООРДИНАТАЛАР:</string>
     <string name="str_malumotlarni_qabul_qilish">МАЪЛУМОТЛАРНИ KАБУЛ KИЛИШ</string>
     <string name="str_batareya_qkp">БАТАРЕЯ KКП</string>
+    <string name="str_batareya_uop">БАТАРЕЯ ЎОП</string>
+    <string name="str_asosiy_yonaltiruvchi_nuqta">АСОСИЙ ЙЎНАЛТИРУВЧИ НУKТА</string>
+    <string name="str_zaxira_yonaltiruvchi_nuqta">ЗАХИРА ЙЎНАЛТИРУВЧИ НУKТА</string>
+    <string name="str_tungi_1">ТУНГИ 1-ЙЎНАЛТИРУВЧИ НУKТА</string>
+    <string name="str_tungi_2">ТУНГИ 2-ЙЎНАЛТИРУВЧИ НУKТА</string>
+    <string name="str_4_orudiya">4-ОРУДИЯ</string>
+    <string name="str_eng_kichik">ЭНГ КИЧИК МЎЛЖАЛ:</string>
+    <string name="str_qoshnilar">KЎШНИЛАР</string>
+    <string name="str_toliq_zaryad">Тўлик заряд</string>
+    <string name="str_kam_zaryad">Кам-ган заряд</string>
+    <string name="x">Х =</string>
+    <string name="y">Y =</string>
+    <string name="h">H =</string>
+    <string name="str_malumotlarni_qolda">МАЪЛУМОТЛАРНИ ХАРИТАДА АКС ЭТИШ</string>
+    <string name="str_bekor_qilish">БЕКОР KИЛИШ</string>
+    <string name="str_kiritish">КИРИТИШ</string>
 </resources>
