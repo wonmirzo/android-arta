@@ -7,4 +7,7 @@
     <string name="str_qoshimcha">KЎШИМЧА</string>
     <string name="str_main_title">1-АДн 2-артиллерия батареяси 4-расчет</string>
     <string name="str_yakunlash">ЯКУНЛАШ</string>
+    <string name="str_koordinatalar">КООРДИНАТАЛАР:</string>
+    <string name="str_malumotlarni_qabul_qilish">МАЪЛУМОТЛАРНИ KАБУЛ KИЛИШ</string>
+    <string name="str_batareya_qkp">БАТАРЕЯ KКП</string>
 </resources>
