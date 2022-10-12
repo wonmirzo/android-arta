@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg_item"
-    android:gravity="center_horizontal|center_vertical"
+    android:gravity="center"
     android:orientation="vertical">
 
 
@@ -41,15 +41,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
-                android:background="@drawable/bg_btn"
                 android:gravity="end">
 
-                <TextView
+                <Button
+                    android:id="@+id/btnJangovarQabulQilish"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/bg_btn"
                     android:padding="5dp"
                     android:text="@string/str_malumotlarni_qabul_qilish"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/black"
+                    app:backgroundTint="@null" />
 
             </LinearLayout>
 
