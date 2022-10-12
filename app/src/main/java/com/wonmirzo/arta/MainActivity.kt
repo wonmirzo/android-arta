@@ -37,32 +37,32 @@ class MainActivity : AppCompatActivity() {
 
     private fun manageFragments() {
         binding.apply {
-            llJangovar?.setOnClickListener {
+            llJangovar.setOnClickListener {
                 index = 0
-                viewPager?.currentItem = index
+                viewPager.currentItem = index
             }
 
             llOrudiya?.setOnClickListener {
                 index = 1
-                viewPager?.currentItem = index
+                viewPager.currentItem = index
             }
 
             llOtOchish?.setOnClickListener {
                 index = 2
-                viewPager?.currentItem = index
+                viewPager.currentItem = index
             }
 
             llXabarlar?.setOnClickListener {
                 index = 3
-                viewPager?.currentItem = index
+                viewPager.currentItem = index
             }
 
             llQoshimcha?.setOnClickListener {
                 index = 4
-                viewPager?.currentItem = index
+                viewPager.currentItem = index
             }
 
-            viewPager?.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
+            viewPager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
                 override fun onPageScrolled(
                     position: Int,
                     positionOffset: Float,
