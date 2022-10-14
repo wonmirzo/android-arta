@@ -26,4 +26,19 @@
     <string name="str_malumotlarni_qolda">МАЪЛУМОТЛАРНИ ХАРИТАДА АКС ЭТИШ</string>
     <string name="str_bekor_qilish">БЕКОР KИЛИШ</string>
     <string name="str_kiritish">КИРИТИШ</string>
+    <string name="str_orudiya_turi">ОРУДИЯ ТУРИ</string>
+    <string name="str_oq_dorilar">ЎK-ДОРИЛАР</string>
+
+    <!-- string arrays -->
+    <string-array name="spinner_orudiya_turi">
+        <item>122 мм Д-30</item>
+        <item>152 мм Д-20</item>
+        <item>152 мм 2А36</item>
+        <item>122 мм 2С1</item>
+        <item>152 мм 2С3</item>
+        <item>203 мм 2С7</item>
+        <item>122 мм БМ-21</item>
+        <item>122 мм БМ-19</item>
+        <item>220 мм 9П140</item>
+    </string-array>
 </resources>
