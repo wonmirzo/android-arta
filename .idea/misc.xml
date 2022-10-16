@@ -9,14 +9,18 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/self/arta/app/src/main/res/drawable/background_rounded_corners_left.xml" value="0.2415" />
         <entry key="..\:/Users/user/AndroidStudioProjects/self/arta/app/src/main/res/drawable/background_rounded_corners_left_selected.xml" value="0.1665" />
         <entry key="..\:/Users/user/AndroidStudioProjects/self/arta/app/src/main/res/drawable/bg_btn.xml" value="0.2415" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/self/arta/app/src/main/res/drawable/bg_jangovar_button.xml" value="0.2415" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/self/arta/app/src/main/res/drawable/bg_jangovar_button_unselected.xml" value="0.2415" />
         <entry key="..\:/Users/user/AndroidStudioProjects/self/arta/app/src/main/res/drawable/bg_tv_white_with_stroke.xml" value="0.2415" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/self/arta/app/src/main/res/layout-sw600dp/activity_main.xml" value="0.205859375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/self/arta/app/src/main/res/layout-sw600dp/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/user/AndroidStudioProjects/self/arta/app/src/main/res/layout/activity_main.xml" value="0.2604166666666667" />
         <entry key="..\:/Users/user/AndroidStudioProjects/self/arta/app/src/main/res/layout/fragment_info_maps.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/user/AndroidStudioProjects/self/arta/app/src/main/res/layout/fragment_jangovar_tartib.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/self/arta/app/src/main/res/layout/fragment_malumot.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/user/AndroidStudioProjects/self/arta/app/src/main/res/layout/fragment_medicine_page.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/user/AndroidStudioProjects/self/arta/app/src/main/res/layout/fragment_orudiya_holati.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/user/AndroidStudioProjects/self/arta/app/src/main/res/layout/fragment_ot_ochish.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/self/arta/app/src/main/res/layout/fragment_ot_ochish_jangovar.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/user/AndroidStudioProjects/self/arta/app/src/main/res/layout/fragment_qoshimcha.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/user/AndroidStudioProjects/self/arta/app/src/main/res/layout/fragment_statement_page.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/user/AndroidStudioProjects/self/arta/app/src/main/res/layout/fragment_statement_page_continue.xml" value="0.27447916666666666" />

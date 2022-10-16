@@ -6,6 +6,7 @@ import androidx.viewpager.widget.ViewPager
 import com.wonmirzo.arta.adapter.ViewPagerAdapter
 import com.wonmirzo.arta.databinding.ActivityMainBinding
 import com.wonmirzo.arta.fragments.*
+import com.wonmirzo.arta.fragments.jangovar.JangovarTartibFragment
 
 class MainActivity : AppCompatActivity() {
     private val TAG = MainActivity::class.java.simpleName.toString()

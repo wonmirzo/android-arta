@@ -5,7 +5,9 @@
     <string name="str_ot_ochish">ЎТ ОЧИШ ВАЗИФАСИ</string>
     <string name="str_xabarlar">ХАБАРЛАР</string>
     <string name="str_qoshimcha">KЎШИМЧА</string>
-    <string name="str_main_title">1-АДн 2-артиллерия батареяси 4-расчет</string>
+    <string name="str_adn">- АДH</string>
+    <string name="str_arteleriya_batareyasi">- артиллерия батареяси</string>
+    <string name="str_raschyot">- расчет</string>
     <string name="str_yakunlash">ЯКУНЛАШ</string>
     <string name="str_koordinatalar">КООРДИНАТАЛАР:</string>
     <string name="str_malumotlarni_qabul_qilish">МАЪЛУМОТЛАРНИ KАБУЛ KИЛИШ</string>
@@ -28,6 +30,8 @@
     <string name="str_kiritish">КИРИТИШ</string>
     <string name="str_orudiya_turi">ОРУДИЯ ТУРИ</string>
     <string name="str_oq_dorilar">ЎK-ДОРИЛАР</string>
+    <string name="str_malumot">МАЪЛУМОТ</string>
+    <string name="str_ot_ochish_jangovar">ЎТ ОЧИШ</string>
 
     <!-- string arrays -->
     <string-array name="spinner_orudiya_turi">
@@ -41,4 +45,6 @@
         <item>122 мм БМ-19</item>
         <item>220 мм 9П140</item>
     </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

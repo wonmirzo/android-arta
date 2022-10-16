@@ -29,13 +29,52 @@
                     android:layout_weight="1"
                     android:gravity="center">
 
+                    <EditText
+                        android:id="@+id/etJangovarAdn"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        app:backgroundTint="@color/white" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/str_main_title"
+                        android:text="@string/str_adn"
                         android:textColor="@color/white"
-                        android:textSize="24sp"
-                        android:textStyle="bold" />
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/etJangovarArtileriyaBatareyasi"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        app:backgroundTint="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_arteleriya_batareyasi"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/etJangovarRaschyot"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        app:backgroundTint="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_raschyot"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -50,7 +89,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="10dp"
                         android:textColor="@color/red"
-                        android:textSize="24sp" />
+                        android:textSize="20sp" />
 
                     <Button
                         android:id="@+id/btnYakunlash"
@@ -102,7 +141,7 @@
                         android:text="@string/str_jangovar"
                         android:textAlignment="center"
                         android:textColor="@color/black"
-                        android:textSize="22sp" />
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -123,7 +162,7 @@
                         android:text="@string/str_orudiya"
                         android:textAlignment="center"
                         android:textColor="@color/black"
-                        android:textSize="22sp" />
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -144,7 +183,7 @@
                         android:text="@string/str_ot_ochish"
                         android:textAlignment="center"
                         android:textColor="@color/black"
-                        android:textSize="22sp" />
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -165,7 +204,7 @@
                         android:text="@string/str_xabarlar"
                         android:textAlignment="center"
                         android:textColor="@color/black"
-                        android:textSize="22sp" />
+                        android:textSize="18sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -185,7 +224,7 @@
                         android:text="@string/str_qoshimcha"
                         android:textAlignment="center"
                         android:textColor="@color/black"
-                        android:textSize="24sp" />
+                        android:textSize="18sp" />
                 </LinearLayout>
 
             </LinearLayout>
