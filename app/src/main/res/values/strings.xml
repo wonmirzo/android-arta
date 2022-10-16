@@ -32,6 +32,11 @@
     <string name="str_oq_dorilar">ЎK-ДОРИЛАР</string>
     <string name="str_malumot">МАЪЛУМОТ</string>
     <string name="str_ot_ochish_jangovar">ЎТ ОЧИШ</string>
+    <string name="str_asosiy_yn">Асосий ЙН</string>
+    <string name="str_zaxira_yn">Захира ЙН</string>
+    <string name="str_defis">-</string>
+    <string name="str_snaryad_soni">Снаряд сони</string>
+    <string name="str_qoldiq">Колдик</string>
 
     <!-- string arrays -->
     <string-array name="spinner_orudiya_turi">
