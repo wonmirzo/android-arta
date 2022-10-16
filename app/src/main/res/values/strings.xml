@@ -37,6 +37,21 @@
     <string name="str_defis">-</string>
     <string name="str_snaryad_soni">Снаряд сони</string>
     <string name="str_qoldiq">Колдик</string>
+    <string name="str_nishon">Нишон</string>
+    <string name="str_number">№</string>
+    <string name="str_nishon_xarak">нишон харак</string>
+    <string name="str_shkala">шкала</string>
+    <string name="str_zaryad">заряд</string>
+    <string name="str_snaryad_turi">снаряд тури</string>
+    <string name="str_portlatgich">портлатгич</string>
+    <string name="str_pr">Пр</string>
+    <string name="str_ur">Ур</string>
+    <string name="str_ugl">Угр</string>
+    <string name="str_equal_mark">=</string>
+    <string name="str_snaryad_sarfi">снаряд сарфи</string>
+    <string name="str_komanda">Команда</string>
+    <string name="str_bajarildi">БАЖАРИЛДИ</string>
+    <string name="str_bajarilmadi">БАЖАРИЛМАДИ</string>
 
     <!-- string arrays -->
     <string-array name="spinner_orudiya_turi">
