@@ -1,6 +1,7 @@
 package com.wonmirzo.arta.fragments.jangovar
 
 import android.os.Bundle
+import android.os.Handler
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -23,10 +24,25 @@ class OtOchishFragmentJangovar : BaseFragment() {
 
     private fun initViews() {
         binding.apply {
+            btnYangilash.setOnClickListener {
+                showProgressBar(progressBar)
+                refreshInfo()
+            }
             llOtOchishJangovar.setOnClickListener {
                 hideKeyboard(it)
             }
         }
+    }
+
+    private fun refreshInfo() {
+        val handler = Handler()
+        val runnable = Runnable() {
+            binding.apply {
+                etNishonRaqami.setText("2")
+                hideProgressBar(progressBar)
+            }
+        }
+        handler.postDelayed(runnable, 3000)
     }
 
 }
