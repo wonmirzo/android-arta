@@ -22,7 +22,11 @@ class OtOchishFragmentJangovar : BaseFragment() {
     }
 
     private fun initViews() {
-
+        binding.apply {
+            llOtOchishJangovar.setOnClickListener {
+                hideKeyboard(it)
+            }
+        }
     }
 
 }

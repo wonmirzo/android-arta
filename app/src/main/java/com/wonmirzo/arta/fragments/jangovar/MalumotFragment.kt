@@ -22,6 +22,10 @@ class MalumotFragment : BaseFragment() {
     }
 
     private fun initViews() {
-
+        binding.apply {
+            llMalumot.setOnClickListener {
+                hideKeyboard(it)
+            }
+        }
     }
 }
