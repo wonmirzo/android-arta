@@ -13,16 +13,6 @@ import com.wonmirzo.arta.fragments.BaseFragment
  * **/
 
 class JangovarTartibFragment : BaseFragment() {
-
-    private var fragment: JangovarTartibFragment? = null
-
-    fun newInstance(): JangovarTartibFragment? {
-        if (fragment == null) {
-            fragment = JangovarTartibFragment()
-        }
-        return fragment
-    }
-
     private var _binding: FragmentJangovarTartibBinding? = null
     private val binding get() = _binding!!
 

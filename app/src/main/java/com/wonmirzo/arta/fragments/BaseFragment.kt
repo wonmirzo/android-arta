@@ -2,6 +2,5 @@ package com.wonmirzo.arta.fragments
 
 import androidx.fragment.app.Fragment
 
-abstract class BaseFragment() : Fragment() {
-
+open class BaseFragment : Fragment() {
 }

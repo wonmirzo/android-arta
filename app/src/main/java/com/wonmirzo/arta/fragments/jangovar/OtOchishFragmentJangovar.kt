@@ -1,11 +1,9 @@
 package com.wonmirzo.arta.fragments.jangovar
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.wonmirzo.arta.R
 import com.wonmirzo.arta.databinding.FragmentOtOchishJangovarBinding
 import com.wonmirzo.arta.fragments.BaseFragment
 
