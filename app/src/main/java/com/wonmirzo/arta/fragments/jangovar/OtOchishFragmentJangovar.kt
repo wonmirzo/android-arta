@@ -5,6 +5,7 @@ import android.os.Handler
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import com.wonmirzo.arta.databinding.FragmentOtOchishJangovarBinding
 import com.wonmirzo.arta.db.MainDatabase
 import com.wonmirzo.arta.db.entity.OtOchish
@@ -57,6 +58,7 @@ class OtOchishFragmentJangovar : BaseFragment() {
         )
 
         database.otOchishDao.insertOtOchish(otOchish)
+        Toast.makeText(context, "Saqlandi", Toast.LENGTH_SHORT).show()
     }
 
     private fun refreshInfo() {

@@ -5,7 +5,7 @@ import com.wonmirzo.arta.db.entity.OtOchish
 
 @Dao
 interface OtOchishDao {
-    @Insert
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
     fun insertOtOchish(otOchish: OtOchish)
 
     @Update
@@ -15,5 +15,5 @@ interface OtOchishDao {
     fun deleteOtOchish(otOchish: OtOchish)
 
     @Query("SELECT * FROM ot_ochish_database")
-    fun getAllOtOchish(otOchish: OtOchish)
+    fun getAllOtOchish(): List<OtOchish>
 }
