@@ -15,6 +15,9 @@ class OtOchishFragmentJangovar : BaseFragment() {
     private var _binding: FragmentOtOchishJangovarBinding? = null
     private val binding get() = _binding!!
 
+    private lateinit var mainDatabase: MainDatabase
+    private var btnIsClicked = false
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -26,6 +29,13 @@ class OtOchishFragmentJangovar : BaseFragment() {
     }
 
     private fun initViews() {
+        mainDatabase = MainDatabase.getInstance(requireContext())
+        val allMalumot = mainDatabase.otOchishDao.getAllOtOchish()
+
+        if (allMalumot.isNotEmpty()) {
+            loadInfo()
+        }
+
         binding.apply {
             btnYangilash.setOnClickListener {
                 showProgressBar(progressBar)
@@ -36,13 +46,33 @@ class OtOchishFragmentJangovar : BaseFragment() {
             }
 
             btnBajarildi.setOnClickListener {
+                btnIsClicked = true
                 saveInfoToDatabase()
             }
         }
     }
 
+    private fun loadInfo() {
+        val allMalumot = mainDatabase.otOchishDao.getAllOtOchish()
+        val malumot = allMalumot[0]
+
+        binding.apply {
+            etNishonRaqami.setText(malumot.nishonNumber)
+            etNishonXarak.setText(malumot.nishonXarakteri)
+            etShkala.setText(malumot.shkala)
+            etZaryad.setText(malumot.zaryad)
+            etSnaryadTuri.setText(malumot.snaryadTuri)
+            etPortlatgich.setText(malumot.portlatgich)
+            etPr.setText(malumot.pr)
+            etUr.setText(malumot.ur)
+            etUgr.setText(malumot.ugr)
+            etSnaryadSarfi.setText(malumot.snaryadSarfi)
+            etKomanda.setText(malumot.komanda)
+        }
+    }
+
     private fun saveInfoToDatabase() {
-        val database = MainDatabase.getInstance(requireContext())
+        clearDatabase()
         val otOchish = OtOchish(
             nishonNumber = binding.etNishonRaqami.text.toString(),
             nishonXarakteri = binding.etNishonXarak.text.toString(),
@@ -57,8 +87,12 @@ class OtOchishFragmentJangovar : BaseFragment() {
             komanda = binding.etKomanda.text.toString()
         )
 
-        database.otOchishDao.insertOtOchish(otOchish)
+        mainDatabase.otOchishDao.insertOtOchish(otOchish)
         Toast.makeText(context, "Saqlandi", Toast.LENGTH_SHORT).show()
+    }
+
+    private fun clearDatabase() {
+        mainDatabase.otOchishDao.deleteAllOtOchish()
     }
 
     private fun refreshInfo() {
@@ -72,4 +106,12 @@ class OtOchishFragmentJangovar : BaseFragment() {
         handler.postDelayed(runnable, 3000)
     }
 
+    override fun onStop() {
+        super.onStop()
+        if (!btnIsClicked) {
+            Toast.makeText(requireContext(), "Ma'lumotlar saqlanmadi", Toast.LENGTH_SHORT).show()
+        } else {
+            btnIsClicked = false
+        }
+    }
 }

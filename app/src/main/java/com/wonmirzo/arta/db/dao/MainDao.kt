@@ -14,6 +14,9 @@ interface MainDao {
     @Delete
     fun deleteMain(mainInfo: MainInfo): Int
 
+    @Query("DELETE FROM main_database")
+    fun deleteAllMainInfo()
+
     @Query("SELECT * FROM main_database")
     fun getAllMainInfo(): List<MainInfo>
 }

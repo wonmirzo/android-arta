@@ -14,6 +14,9 @@ interface MalumotDao {
     @Delete
     fun deleteMalumot(malumot: Malumot)
 
+    @Query("DELETE FROM malumot_database")
+    fun deleteAllMalumot()
+
     @Query("SELECT * FROM malumot_database")
     fun getAllMalumot(): List<Malumot>
 }

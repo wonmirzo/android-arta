@@ -14,6 +14,9 @@ interface OtOchishDao {
     @Delete
     fun deleteOtOchish(otOchish: OtOchish)
 
+    @Query("DELETE FROM ot_ochish_database")
+    fun deleteAllOtOchish()
+
     @Query("SELECT * FROM ot_ochish_database")
     fun getAllOtOchish(): List<OtOchish>
 }
