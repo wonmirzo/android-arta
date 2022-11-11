@@ -19,17 +19,17 @@ abstract class MainDatabase : RoomDatabase() {
     abstract val otOchishDao: OtOchishDao
 
     companion object {
-        private var instanse: MainDatabase? = null
+        private var instance: MainDatabase? = null
 
         @Synchronized
         fun getInstance(context: Context): MainDatabase {
-            if (instanse == null) {
-                instanse = Room.databaseBuilder(context, MainDatabase::class.java, "main.db")
+            if (instance == null) {
+                instance = Room.databaseBuilder(context, MainDatabase::class.java, "main.db")
                     .fallbackToDestructiveMigration()
                     .allowMainThreadQueries()
                     .build()
             }
-            return instanse!!
+            return instance!!
         }
     }
 }
