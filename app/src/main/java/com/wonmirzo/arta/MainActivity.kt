@@ -6,9 +6,9 @@ import android.util.Log
 import android.widget.Toast
 import com.wonmirzo.arta.databinding.ActivityMainBinding
 import com.wonmirzo.arta.db.MainDatabase
-import com.wonmirzo.arta.db.PermanentDatabase
+//import com.wonmirzo.arta.db.PermanentDatabase
 import com.wonmirzo.arta.db.entity.MainInfo
-import com.wonmirzo.arta.db.entity.PermanentInfo
+//import com.wonmirzo.arta.db.entity.PermanentInfo
 import com.wonmirzo.arta.fragments.jangovar.JangovarTartibFragment
 
 class MainActivity : AppCompatActivity() {
@@ -16,7 +16,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
     private lateinit var mainDatabase: MainDatabase
-    private lateinit var permanentDatabase: PermanentDatabase
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,11 +50,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun saveInfoToPermanentDatabase() {
-        val mainInfo = MainInfo(
-            adnNumber = binding.etJangovarAdn?.text.toString(),
-            artileriyaBatareyasi = binding.etJangovarArtileriyaBatareyasi?.text.toString(),
-            raschyot = binding.etJangovarRaschyot?.text.toString()
-        )
+
     }
 
     private fun loadInfo() {
