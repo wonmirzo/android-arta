@@ -1,11 +1,15 @@
 package com.wonmirzo.arta.fragments.jangovar
 
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.EditText
 import android.widget.Toast
+import androidx.core.widget.addTextChangedListener
 import com.wonmirzo.arta.databinding.FragmentMalumotBinding
 import com.wonmirzo.arta.db.MainDatabase
 import com.wonmirzo.arta.db.entity.Malumot
@@ -30,6 +34,15 @@ class MalumotFragment : BaseFragment() {
         return view
     }
 
+    override fun onStop() {
+        super.onStop()
+        if (!btnIsClicked) {
+            Toast.makeText(requireContext(), "Ma'lumotlar saqlanmadi", Toast.LENGTH_SHORT).show()
+        } else {
+            btnIsClicked = false
+        }
+    }
+
     private fun initViews() {
         mainDatabase = MainDatabase.getInstance(requireContext())
 
@@ -51,6 +64,8 @@ class MalumotFragment : BaseFragment() {
                 saveInfoToDatabase()
             }
         }
+
+        configEditTexts()
     }
 
     private fun loadDefaultInfo() {
@@ -63,6 +78,7 @@ class MalumotFragment : BaseFragment() {
             etMalumotSnaryadSoni.setText(defaultString)
         }
     }
+
 
     private fun loadInfo() {
         val allMalumot = mainDatabase.malumotDao.getAllMalumot()
@@ -95,13 +111,32 @@ class MalumotFragment : BaseFragment() {
         mainDatabase.malumotDao.deleteAllMalumot()
     }
 
-    override fun onStop() {
-        super.onStop()
-        if (!btnIsClicked) {
-            Toast.makeText(requireContext(), "Ma'lumotlar saqlanmadi", Toast.LENGTH_SHORT).show()
-        } else {
-            btnIsClicked = false
+
+    private fun configEditTexts() {
+        binding.apply {
+            focusRequest(etMalumotAsosiyYn, etMalumotAsosiyYn2)
+            focusRequest(etMalumotAsosiyYn2, etMalumotZaxiraYn)
+            focusRequest(etMalumotZaxiraYn, etMalumotZaxiraYn2)
+            focusRequest(etMalumotZaxiraYn2, etMalumotSnaryadSoni)
         }
+    }
+
+    private fun focusRequest(etCurrent: EditText, etRequest: EditText) {
+        var textSize = 0
+        etCurrent.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+            }
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+            }
+
+            override fun afterTextChanged(s: Editable?) {
+                textSize++
+                if (textSize == 2) {
+                    etRequest.requestFocus()
+                }
+            }
+        })
     }
 }
 
