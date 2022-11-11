@@ -2,6 +2,7 @@ package com.wonmirzo.arta
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import com.wonmirzo.arta.databinding.ActivityMainBinding
 import com.wonmirzo.arta.db.MainDatabase
@@ -64,6 +65,17 @@ class MainActivity : AppCompatActivity() {
 
     private fun clearDatabase() {
         mainDatabase.mainDao.deleteAllMainInfo()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        clearAllInfoFromDatabase()
+    }
+
+    private fun clearAllInfoFromDatabase() {
+        mainDatabase.mainDao.deleteAllMainInfo()
+        mainDatabase.malumotDao.deleteAllMalumot()
+        mainDatabase.otOchishDao.deleteAllOtOchish()
     }
 
 }

@@ -37,6 +37,8 @@ class MalumotFragment : BaseFragment() {
 
         if (allMalumot.isNotEmpty()) {
             loadInfo()
+        } else {
+            loadDefaultInfo()
         }
 
         binding.apply {
@@ -48,6 +50,17 @@ class MalumotFragment : BaseFragment() {
                 btnIsClicked = true
                 saveInfoToDatabase()
             }
+        }
+    }
+
+    private fun loadDefaultInfo() {
+        val defaultString = ""
+        binding.apply {
+            etMalumotAsosiyYn.setText(defaultString)
+            etMalumotAsosiyYn2.setText(defaultString)
+            etMalumotZaxiraYn.setText(defaultString)
+            etMalumotZaxiraYn2.setText(defaultString)
+            etMalumotSnaryadSoni.setText(defaultString)
         }
     }
 

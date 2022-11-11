@@ -2,6 +2,7 @@ package com.wonmirzo.arta.fragments.jangovar
 
 import android.os.Bundle
 import android.os.Handler
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,6 +13,8 @@ import com.wonmirzo.arta.db.entity.OtOchish
 import com.wonmirzo.arta.fragments.BaseFragment
 
 class OtOchishFragmentJangovar : BaseFragment() {
+    private val TAG = OtOchishFragmentJangovar::class.java.simpleName
+
     private var _binding: FragmentOtOchishJangovarBinding? = null
     private val binding get() = _binding!!
 
@@ -34,6 +37,8 @@ class OtOchishFragmentJangovar : BaseFragment() {
 
         if (allMalumot.isNotEmpty()) {
             loadInfo()
+        } else {
+            loadDefaultInfo()
         }
 
         binding.apply {
@@ -49,6 +54,23 @@ class OtOchishFragmentJangovar : BaseFragment() {
                 btnIsClicked = true
                 saveInfoToDatabase()
             }
+        }
+    }
+
+    private fun loadDefaultInfo() {
+        val defaultString = ""
+        binding.apply {
+            etNishonRaqami.setText(defaultString)
+            etNishonXarak.setText(defaultString)
+            etShkala.setText(defaultString)
+            etZaryad.setText(defaultString)
+            etSnaryadTuri.setText(defaultString)
+            etPortlatgich.setText(defaultString)
+            etPr.setText(defaultString)
+            etUr.setText(defaultString)
+            etUgr.setText(defaultString)
+            etSnaryadSarfi.setText(defaultString)
+            etKomanda.setText(defaultString)
         }
     }
 
