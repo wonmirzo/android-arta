@@ -14,6 +14,7 @@ import com.wonmirzo.arta.databinding.FragmentMalumotBinding
 import com.wonmirzo.arta.db.MainDatabase
 import com.wonmirzo.arta.db.entity.Malumot
 import com.wonmirzo.arta.fragments.BaseFragment
+import com.wonmirzo.arta.utils.FocusRequest.focusRequest
 
 class MalumotFragment : BaseFragment() {
     private val TAG = MalumotFragment::class.java.simpleName
@@ -119,24 +120,6 @@ class MalumotFragment : BaseFragment() {
             focusRequest(etMalumotZaxiraYn, etMalumotZaxiraYn2)
             focusRequest(etMalumotZaxiraYn2, etMalumotSnaryadSoni)
         }
-    }
-
-    private fun focusRequest(etCurrent: EditText, etRequest: EditText) {
-        var textSize = 0
-        etCurrent.addTextChangedListener(object : TextWatcher {
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-            }
-
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-            }
-
-            override fun afterTextChanged(s: Editable?) {
-                textSize++
-                if (textSize == 2) {
-                    etRequest.requestFocus()
-                }
-            }
-        })
     }
 }
 

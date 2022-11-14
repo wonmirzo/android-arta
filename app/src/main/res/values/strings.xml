@@ -53,6 +53,7 @@
     <string name="str_bajarildi">БАЖАРИЛДИ</string>
     <string name="str_bajarilmadi">БАЖАРИЛМАДИ</string>
     <string name="str_yangilash">ЯНГИЛАШ</string>
+    <string name="str_history">Тарих</string>
 
     <!-- string arrays -->
     <string-array name="spinner_orudiya_turi">
