@@ -9,11 +9,6 @@ import com.wonmirzo.arta.R
 import com.wonmirzo.arta.databinding.FragmentJangovarTartibBinding
 import com.wonmirzo.arta.fragments.BaseFragment
 import com.wonmirzo.arta.utils.HistoryButtonClickedListener
-import java.lang.RuntimeException
-
-/**
- * The first fragment to open is a google map and for short information about the patient
- * **/
 
 class JangovarTartibFragment : BaseFragment() {
     private var _binding: FragmentJangovarTartibBinding? = null

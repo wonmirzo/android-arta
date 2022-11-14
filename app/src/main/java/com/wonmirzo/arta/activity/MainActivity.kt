@@ -5,7 +5,9 @@ import android.widget.Toast
 import com.wonmirzo.arta.R
 import com.wonmirzo.arta.databinding.ActivityMainBinding
 import com.wonmirzo.arta.db.MainDatabase
+import com.wonmirzo.arta.db.PermanentDatabase
 import com.wonmirzo.arta.db.entity.MainInfo
+import com.wonmirzo.arta.db.entity.PermanentInfo
 import com.wonmirzo.arta.fragments.jangovar.JangovarTartibFragment
 import com.wonmirzo.arta.utils.HistoryButtonClickedListener
 
@@ -14,6 +16,7 @@ class MainActivity : BaseActivity(), HistoryButtonClickedListener {
     private lateinit var binding: ActivityMainBinding
 
     private lateinit var mainDatabase: MainDatabase
+    private lateinit var permanentDatabase: PermanentDatabase
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,6 +36,7 @@ class MainActivity : BaseActivity(), HistoryButtonClickedListener {
 
     private fun initViews() {
         mainDatabase = MainDatabase.getInstance(applicationContext)
+        permanentDatabase = PermanentDatabase.getInstance(applicationContext)
 
         val allMainInfo = mainDatabase.mainDao.getAllMainInfo()
 
@@ -52,7 +56,13 @@ class MainActivity : BaseActivity(), HistoryButtonClickedListener {
     }
 
     private fun saveInfoToPermanentDatabase() {
-
+        val mainInfo = mainDatabase.mainDao.getAllMainInfo()[0]
+        val malumot = mainDatabase.malumotDao.getAllMalumot()[0]
+        val otOchish = mainDatabase.otOchishDao.getAllOtOchish()[0]
+        val permanentInfo =
+            PermanentInfo(mainInfo = mainInfo, malumot = malumot, otOchish = otOchish)
+        permanentDatabase.permanentDao.insertInfo(permanentInfo)
+        Toast.makeText(context, "Saqlandi!!", Toast.LENGTH_SHORT).show()
     }
 
     private fun loadInfo() {
