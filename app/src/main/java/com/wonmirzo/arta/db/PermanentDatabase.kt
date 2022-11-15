@@ -9,7 +9,7 @@ import com.wonmirzo.arta.db.converters.PermanentInfoTypeConverter
 import com.wonmirzo.arta.db.dao.PermanentDao
 import com.wonmirzo.arta.db.entity.PermanentInfo
 
-@Database(entities = [PermanentInfo::class], version = 1, exportSchema = true)
+@Database(entities = [PermanentInfo::class], version = 2, exportSchema = true)
 @TypeConverters(PermanentInfoTypeConverter::class)
 abstract class PermanentDatabase : RoomDatabase() {
 

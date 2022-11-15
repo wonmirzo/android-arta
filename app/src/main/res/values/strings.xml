@@ -54,6 +54,7 @@
     <string name="str_bajarilmadi">БАЖАРИЛМАДИ</string>
     <string name="str_yangilash">ЯНГИЛАШ</string>
     <string name="str_history">Тарих</string>
+    <string name="str_no_history">Сизда сакланган маълумотлар мавжуд эмас</string>
 
     <!-- string arrays -->
     <string-array name="spinner_orudiya_turi">

@@ -17,5 +17,8 @@ data class PermanentInfo(
     var malumot: Malumot? = null,
 
     @ColumnInfo(name = "ot_ochish_info")
-    var otOchish: OtOchish? = null
+    var otOchish: OtOchish? = null,
+
+    @ColumnInfo(name = "saqlangan_sanasi")
+    var date: String? = null
 )
